@@ -1,0 +1,8 @@
+<!-- home.component.html -->
+<h1>Welcome to the Adventure App</h1>
+<p appTalkative>Click me to see a random message</p>
+<app-spinning-wheel></app-spinning-wheel>
+<input type="text" [(ngModel)]="inputValue" placeholder="Enter something" />
+<p [style.color]="inputValue.length < 5 ? 'red' : 'black'">
+  {{ inputValue }}
+</p>
